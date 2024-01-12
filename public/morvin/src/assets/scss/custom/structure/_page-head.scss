@@ -1,0 +1,32 @@
+// 
+// Page-title
+// 
+
+.page-title-box {
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    h4 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px !important;
+    }
+}
+
+.topbar-social-icon{
+    padding: calc(#{$header-height - 32px} / 2) 0;
+}
+
+.title-tooltip{
+    li{
+       i{
+        font-size: 20px;
+        margin-left: 10px;
+        color: $header-item-color;
+       }
+    }
+}

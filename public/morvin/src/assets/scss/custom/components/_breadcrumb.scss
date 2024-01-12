@@ -1,0 +1,36 @@
+
+// 
+// breadcrumb.scss
+//
+
+
+// Breadcrumb item arrow
+.breadcrumb-item {
+    > a {
+        color: $white;
+    }
+    +.breadcrumb-item {
+        &::before {
+            color:  $white;
+            content: "\f105" !important;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 700;
+        }
+    }
+}
+  
+
+// RTL
+
+[dir="rtl"] {
+    .breadcrumb-item {
+        +.breadcrumb-item {
+            padding-right: $breadcrumb-item-padding;
+
+            &::before {
+                content: "\f104";
+            }
+        }
+    }
+
+}

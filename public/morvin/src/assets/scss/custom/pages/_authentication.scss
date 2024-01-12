@@ -1,0 +1,77 @@
+// 
+// authentication.scss
+//
+
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+
+
+.home-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .home-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+.authentication-bg {
+    background-image: url(../images/title-img.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.authentication-bg .bg-overlay {
+    background-color: $primary;
+}
+
+
+// Erorr
+
+
+.error-page {
+    text-transform: uppercase;
+    background: repeating-linear-gradient(45deg, $primary, $primary 10px, $success 10px, $success 20px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    line-height: .8;
+    position: relative;
+}
+
+
+// FAQS
+
+
+.faq-icon{
+    i {
+        width: 30px;
+        height: 30px;
+        line-height: 28px;
+        border: 1px solid;
+        border-radius: 50%;
+        text-align: center;
+        float: right;
+        font-size: 16px;
+        display: inline-block;
+    }
+    &:after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.2;
+            right: 50px;
+            margin-top: -10px;
+            border-radius: 50%;
+            background: $primary;
+        }
+}
+
